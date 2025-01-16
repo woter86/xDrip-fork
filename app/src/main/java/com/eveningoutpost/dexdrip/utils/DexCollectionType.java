@@ -336,6 +336,8 @@ public enum DexCollectionType {
         switch (type) {
             case LibreReceiver:
                 return libreOneMinute ? 60_000 : 300_000;
+            case NSEmulator:
+                return 60_000;
             default:
                 return 300_000; // 5 minutes
         }
