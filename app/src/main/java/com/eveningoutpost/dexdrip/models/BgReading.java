@@ -966,7 +966,7 @@ public class BgReading extends Model implements ShareUploadableBg {
     }
 
     public static BgReading readingNearTimeStamp(long startTime) {
-        long margin = (4 * 60 * 1000);
+        long margin = (1 * 60 * 1000);
         return readingNearTimeStamp(startTime, margin);
     }
 
